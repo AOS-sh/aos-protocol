@@ -1,5 +1,5 @@
 {
-  "$schema": "https://aos.sh/spec/v0.1.json",
+  "$schema": "https://aos-lp.vercel.app",
   "site_name": "Example Booking SaaS",
   "version": "0.1",
   "auth": {
