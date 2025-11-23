@@ -1,0 +1,43 @@
+{
+  "$schema": "https://aos.sh/spec/v0.1.json",
+  "site_name": "Example Booking SaaS",
+  "version": "0.1",
+  "auth": {
+    "type": "session_cookie",
+    "cookie_names": ["__session"]
+  },
+  "contact": {
+    "email": "team@example.com"
+  },
+  "actions": [
+    {
+      "id": "search_availability",
+      "name": "Search available slots",
+      "method": "GET",
+      "url": "https://example.com/api/availability",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "duration": { "type": "integer", "enum": [30, 60] }
+        },
+        "required": ["date"]
+      }
+    },
+    {
+      "id": "book_slot",
+      "name": "Book a time slot",
+      "method": "POST",
+      "url": "https://example.com/api/book",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "slot_id": { "type": "string" },
+          "name": { "type": "string" },
+          "email": { "type": "string" }
+        },
+        "required": ["slot_id", "name", "email"]
+      }
+    }
+  ]
+}

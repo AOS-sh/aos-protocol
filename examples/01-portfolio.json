@@ -1,0 +1,27 @@
+{
+  "$schema": "https://aos.sh/spec/v0.1.json",
+  "site_name": "Bernardo Raposo – Web Developer",
+  "version": "0.1",
+  "auth": { "type": "none" },
+  "contact": {
+    "email": "bernardo.raposo@example.com",
+    "preferred": true,
+    "note": "Open to opportunities from 2026"
+  },
+  "actions": [
+    {
+      "id": "get_portfolio",
+      "name": "List all projects",
+      "description": "Returns structured data about every featured project",
+      "method": "GET",
+      "url": "https://bernardo-raposo.com/api/aos/portfolio"
+    },
+    {
+      "id": "contact_me",
+      "name": "Get professional email",
+      "description": "Returns email so agents can reach out directly",
+      "method": "GET",
+      "url": "https://bernardo-raposo.com/api/aos/contact"
+    }
+  ]
+}

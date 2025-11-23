@@ -1,0 +1,37 @@
+{
+  "$schema": "https://aos.sh/spec/v0.1.json",
+  "site_name": "Example Store",
+  "version": "0.1",
+  "auth": { "type": "none" },
+  "actions": [
+    {
+      "id": "search_products",
+      "name": "Search products",
+      "method": "GET",
+      "url": "https://store.example.com/api/search",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "q": { "type": "string" },
+          "category": { "type": "string" },
+          "min_price": { "type": "number" },
+          "max_price": { "type": "number" }
+        },
+        "required": ["q"]
+      }
+    },
+    {
+      "id": "get_product",
+      "name": "Get product details",
+      "method": "GET",
+      "url": "https://store.example.com/api/products/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" }
+        },
+        "required": ["id"]
+      }
+    }
+  ]
+}
