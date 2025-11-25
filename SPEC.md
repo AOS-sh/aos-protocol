@@ -1,29 +1,19 @@
-# AOS Protocol v0.1 – .well-known/agent Specification
+# AOS Protocol v1.1 – .well-known/agent Specification
 
-Serve this JSON at `https://yoursite.com/.well-known/agent`.
+**Released: November 25, 2025**  
+**Status: Stable**  
 
-## Schema
+The AOS Protocol is a discoverable JSON file served at `https://yoursite.com/.well-known/agent` that makes your site agent-executable. It defines actions, auth, and inputs—eliminating trial-and-error for LLMs like Grok, Claude, or GPT.  
 
-```json
-{
-  "$schema": "https://www.runaos.online/schema/agents.json",
-  "site_name": "Your Site Name",
-  "version": "0.1",
-  "auth": {
-    "type": "none | session_cookie | oauth2 | api_key"
-  },
-  "contact": {
-    "email": "hello@yoursite.com",
-    "preferred": true
-  },
-  "actions": [
-    {
-      "id": "action_name",
-      "name": "Human-readable name",
-      "description": "What it does",
-      "method": "GET | POST",
-      "url": "https://yoursite.com/api/action",
-      "parameters": { /* JSON Schema */ }
-    }
-  ]
-}
+v1.1 evolves v0.1:  
+- `site_name` standardized (not `name`).  
+- `actions[]` → `capabilities[]` for clarity (array of rich objects).  
+- Added `input_schema`/`output_schema` (JSON Schema) + examples for zero-shot execution.  
+- `auth` → `authentication` with more types (including `nexus` for Layer 0).  
+- Backward-compatible: v0.1 files validate (we map `actions` to `capabilities`).  
+
+## Official JSON Schema (for Validation & Autocomplete)
+
+Validate your file with AJV or any JSON Schema tool:  
+```bash
+npx ajv validate -s https://runaos.online/schema/v1.1.json -d your-agents.json

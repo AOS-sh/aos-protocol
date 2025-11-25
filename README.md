@@ -13,7 +13,7 @@ In 1994, `robots.txt` made the web crawlable. In 2025, `/.well-known/agent` make
 - **For agents**: Discover actions, auth, contact in seconds — zero hallucination.
 - **For everyone**: The seed of the Agent Operating System (AOS) – a full stack coming soon.
 
-Live example: [bernardo-raposo.com](https://bernardo-raposo.com/.well-known/agent) – the first agent-native portfolio.
+Live example: [bernardo-raposo.com](https://www.bernardo-raposo.com/.well-known/agent.json) – the first agent-native portfolio.
 
 ## Quick Start (5 Minutes)
 
