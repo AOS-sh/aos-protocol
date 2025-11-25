@@ -20,7 +20,7 @@ Live example: [bernardo-raposo.com](https://bernardo-raposo.com/.well-known/agen
 1. Create `public/.well-known/agent` in your Next.js/Astro/WordPress site.
 2. Deploy. Done.
 
-[Live landing → aos-lp.vercel.app](https://aos-lp.vercel.app)
+[Live landing → aos-lp.vercel.app](https://www.runaos.online/)
 
 ## The Spec
 

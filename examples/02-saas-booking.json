@@ -1,5 +1,5 @@
 {
-  "$schema": "https://aos-lp.vercel.app",
+  "$schema": "https://www.runaos.online/",
   "site_name": "Example Booking SaaS",
   "version": "0.1",
   "auth": {
