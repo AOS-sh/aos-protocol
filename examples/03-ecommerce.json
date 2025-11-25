@@ -1,5 +1,5 @@
 {
-  "$schema": "https://www.runaos.online/",
+  "$schema": "https://www.runaos.online/schema/agents.json",
   "site_name": "Example Store",
   "version": "0.1",
   "auth": { "type": "none" },

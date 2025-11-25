@@ -1,5 +1,5 @@
 {
-  "$schema": "https://www.runaos.online/",
+  "$schema": "https://www.runaos.online/schema/agents.json",
   "site_name": "Legacy Blog (2008–2025)",
   "version": "0.1",
   "auth": { "type": "none" },

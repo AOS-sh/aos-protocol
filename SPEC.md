@@ -6,7 +6,7 @@ Serve this JSON at `https://yoursite.com/.well-known/agent`.
 
 ```json
 {
-  "$schema": "https://www.runaos.online/spec/v0.1.json",
+  "$schema": "https://www.runaos.online/schema/agents.json",
   "site_name": "Your Site Name",
   "version": "0.1",
   "auth": {
