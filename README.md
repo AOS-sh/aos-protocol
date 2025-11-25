@@ -15,10 +15,11 @@ In 1994, `robots.txt` made the web crawlable. In 2025, `/.well-known/agent` make
 
 Live example: [bernardo-raposo.com](https://www.bernardo-raposo.com/.well-known/agent.json) – the first agent-native portfolio.
 
-## Quick Start (5 Minutes)
+## Quick Start ( >1 Minute )
 
-1. Create `public/.well-known/agent` in your Next.js/Astro/WordPress site.
-2. Deploy. Done.
+1. Run on your terminal: npx runaos@latest
+2. Update the file according to your needs.
+
 
 [Live landing → aos-lp.vercel.app](https://www.runaos.online/)
 
